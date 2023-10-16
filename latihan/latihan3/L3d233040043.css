@@ -1,0 +1,38 @@
+body{
+    background-image: url(background.png);
+    background-repeat: repeat-x;
+}
+h1{
+    font-size: 60px;
+    font-family: 'comic sans ms';
+    src:local("comic-sans-ms-font-family/COMIC.ttf");
+    color: darkblue;
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+h4{
+    text-align: center;
+    font-style: italic;
+}
+p{
+    text-align: center;
+}
+
+.p1{
+    color: yellow;
+}
+
+.link1{
+    color: red;
+    text-decoration: underline;
+}
+.link2{
+    text-decoration: none;
+    font-weight: bold;
+}
+.link2:hover{
+    background-color: blue;
+    color: white;
+}

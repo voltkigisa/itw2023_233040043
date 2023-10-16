@@ -1,0 +1,19 @@
+body{
+    background:aqua;
+}
+h1{
+    font-size: 60px;
+    font-family: 'comic sans ms';
+    src:local("comic-sans-ms-font-family/COMIC.ttf");
+    color: darkblue;
+}
+h4{
+    text-align: right;
+    font-style: italic;
+    
+}
+p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: justify;
+}
+

@@ -1,0 +1,26 @@
+body{
+    background-color: aqua;
+}
+h1{
+    font-size: 60px;
+    font-family: 'comic sans ms';
+    src:local("comic-sans-ms-font-family/COMIC.ttf");
+    color: darkblue;
+    text-align: center;
+}
+h4{
+    text-align: right;
+    font-style: italic;
+}
+p{
+    text-align: center;
+}
+
+.p1{
+    color: yellow;
+}
+
+.link1{
+    color: white;
+    text-decoration: none;
+}
