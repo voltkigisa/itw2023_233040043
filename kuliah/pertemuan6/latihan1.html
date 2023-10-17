@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pertemuan 6 - Latihan 1</title>
+    <style>
+        body{
+            min-height: 2000px;
+        }
+        div{
+            width: 100px;
+            height: 100px;
+            color: white;
+            font-family: Arial;
+            font-size: 30px;
+            text-align: center;
+            line-height: 100px;
+            position: absolute;
+        }
+        .satu{
+            background-color: aqua;
+            z-index: 1;
+        }
+        .dua{
+            background-color: orange;
+            top: 25px;
+            left: 25px;
+            z-index: 2;
+        }
+        .tiga{
+            background-color: red;
+            top: 50px;
+            left: 50px;
+        }
+
+        .pembungkus{
+            width: 300px;
+            height: 300px;
+            border: 8px solid black;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="pembungkus">
+        <div class="satu">1</div>
+        <div class="dua">2</div>
+        <div class="tiga">3</div>
+    </div>
+</body>
+</html>
