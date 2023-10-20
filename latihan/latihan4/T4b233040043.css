@@ -188,6 +188,12 @@ body{
     font-style: italic;
 }
 
+.content .kompas:hover{
+    color: white;
+    background-color: black;
+    padding: 3px;
+}
+
 .content .gambar1{
     background-image: url(../latihan3/img/gambar1.4b.jpg);
     background-size: cover;
