@@ -99,7 +99,8 @@ body{
     margin: auto;
     border-right: 3px solid rgb(255, 91, 32);
     border-left: 3px solid rgb(255, 91, 32);
-    border-radius: 10px;
+    border-radius: 100px;
+    overflow: hidden;
 }
 
 .header{
