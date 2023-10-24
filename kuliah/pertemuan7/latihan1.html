@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pertemuan7-latihan1</title>
+    <style>
+        div {
+            width: 150px;
+            height: 150px;
+            margin: 50px auto;
+        }
+        .kotak1 {
+            position: relative;
+            background-color: salmon;
+            /*border-top-left-radius: 50%;
+            border-top-right-radius: 50%;
+            border-bottom-right-radius: 50%;*/
+            border-radius: 50% 50% 50% 0;
+        }
+
+        .kotak2 {
+            background-color: lightblue;
+            /* box-shadow: <x-offset> <y-offset> <blur> [size] <color>; */
+            box-shadow: 0 0 0 10px red, 0 0 0 20px green, 0 0 0 30px yellow, 0 0 0 40px blue, 0 0 0 50px plum;
+        }
+        
+        .kotak2:hover{
+            border-radius: 50%;
+            transition: 3s;
+            background-color: saddlebrown;
+            rotate: 360deg;
+            scale: 0.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="kotak1"></div>
+    <div class="kotak2"></div>
+</body>
+</html>
