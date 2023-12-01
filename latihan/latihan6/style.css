@@ -1,0 +1,145 @@
+/*font */
+  @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Dancing+Script&family=Nova+Mono&family=Nova+Square&family=Poppins:wght@100&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'audiowide', monospace;
+    overflow-x: hidden;
+}
+
+/* navbar*/
+
+nav{
+    display: flex;
+    background-image: linear-gradient(to right, rgb(0, 255, 170) 40%, rgb(0, 132, 255));
+    height: 50px;
+    justify-content: space-around;
+    align-items: center;
+    color: rgb(55, 37, 216);
+    text-shadow: 0 0 2px rgb(55, 37, 216);
+}
+
+nav .logo{
+    letter-spacing: 3px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    width: 40%;
+    justify-content: space-between;
+}
+
+nav ul li a{
+    color: rgb(214, 174, 252);
+    text-decoration: none;
+    font-size: .8em;
+    color: rgb(25, 0, 255);
+}
+
+nav ul li:hover{
+    transform: scale(1.3);
+    transition: .3s;
+}
+
+nav ul li a:Hover{
+    color: rgb(255, 255, 255);
+}
+
+/* hamburger menu*/
+.menu-toggle{
+    display: flex;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+    display: none;
+}
+
+.menu-toggle input{
+    position: absolute;
+    width: 48px;
+    height: 28px;
+    left: -10px;
+    top: -4px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.menu-toggle span{
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: rgb(25, 0, 255);
+    border-radius: 5px;
+    transition: all .7s;
+}
+
+/*hamburger toggle animation*/
+.menu-toggle span:nth-child(2){
+    transform-origin: 0 0;
+}
+
+.menu-toggle span:nth-child(4){
+    transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2){
+    transform: rotate(45deg) translate(-1px,-1px);
+    background-color: white;
+}
+
+.menu-toggle input:checked ~ span:nth-child(4){
+    transform: rotate(-45deg) translate(-1px, 0);
+    background-color: white;
+}
+
+.menu-toggle input:checked ~ span:nth-child(3){
+    transform: scale(0);
+    opacity: 0;
+}
+
+/* breakpoint */
+
+/* breakpoint tablet*/
+
+@media screen and (max-width: 768px){
+    nav ul{
+        width: 50%;
+    }
+}
+
+/* breakpoint hp*/
+@media screen and (max-width: 576px){
+    .menu-toggle{
+        display: flex;
+    }
+    nav ul{
+        position: absolute;
+        left: 0;
+        top: 30px;
+        right: 0;
+        width: 100%;
+        height: 10%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        background-image: linear-gradient( to right , rgb(0, 255, 170) 40%, rgb(0, 132, 255));
+        z-index: -1;
+        transform: translatey(-100%);
+        transition: all 1s;
+        opacity: 0;
+    }
+
+    nav ul.slide{
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+}
