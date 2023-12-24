@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Cyberpunk</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Dancing+Script&family=Nova+Mono&family=Nova+Square&family=Poppins:wght@100&display=swap');
+      </style>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+
+        <header class="header">
+            <div class="hero">
+                <h2>CyberPunk</h2>
+                <div class="sub-heading">Wallpaper & poster</div>
+            </div>
+            <div class="features feature1">
+                <div class="price">IDR 120k</div>
+                <p class="item">Wallpaper</p>
+            </div>
+            <div class="features feature2">
+                <div class="price">IDR 30k</div>
+                <p class="item">Poster</p>
+            </div>
+        </header>
+
+        <nav class="menu">
+            <div class="menu-toggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            <div class="brand">
+                <h1>CyberPunk</h1>
+            </div>
+            <ul class="menu-list">
+                <li><a href="">Home</a></li>
+                <li><a href="">Produck</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Gallery</a></li>
+            </ul>
+        </nav>
+
+        <section class="services">
+            <div class="service">
+                <h3>Buat Wallpaper</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Ullam soluta ducimus nemo quis, quidem eius?
+                </p>
+            </div>
+            <div class="service">
+                <h3>Buat Poster</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Ullam soluta ducimus nemo quis, quidem eius?
+                </p>
+            </div>
+            <div class="service">
+                <h3>Freelance Buat Aset Pixel</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Ullam soluta ducimus nemo quis, quidem eius?
+                </p>
+            </div>
+        </section>
+
+        <section class="gallery">
+            <h2>Gallery</h2>
+            <img src="https://source.unsplash.com/random/201x201" alt=""><img src="https://source.unsplash.com/random/202x202" alt=""><img src="https://source.unsplash.com/random/203x203" alt=""><img src="https://source.unsplash.com/random/204x204" alt=""><img src="https://source.unsplash.com/random/205x205" alt=""><img src="https://source.unsplash.com/random/206x206" alt=""><img src="https://source.unsplash.com/random/207x207" alt=""><img src="https://source.unsplash.com/random/208x208" alt=""><img src="https://source.unsplash.com/random/209x209" alt=""><img src="https://source.unsplash.com/random/2010x2010" alt="">
+        </section>
+
+    </div>
+    <script>
+        const menuToggle = document.querySelector ('.menu-toggle input');
+const nav = document.querySelector ('nav ul');
+
+menuToggle.addEventListener ('click', function() {
+    nav.classList.toggle('slide');
+})
+
+    </script>
+
+</body>
+</html>
